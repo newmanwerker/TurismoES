@@ -103,10 +103,11 @@ form .txt_field{
     text-decoration: underline;
 }
 
+
 .button-container button {
     background-color: #e71be0; /* Color de fondo */
     border: none; /* Remueve el borde */
-    color: white; /* Color del texto */
+    color: #666666; /* Color del texto */
     padding: 3px 16px; /* Espaciado alrededor del texto */
     text-align: center; /* Alineación del texto */
     text-decoration: none; /* Remueve el subrayado */
