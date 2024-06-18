@@ -5,3 +5,6 @@ from .models import Servicio
 def servicios(request):
     servicios = Servicio.objects.all()
     return render(request, 'turismo/servicios.html', {'servicios': servicios})
+
+def login(request):
+    return render(request, 'turismo/login.html')
