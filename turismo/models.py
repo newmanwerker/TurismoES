@@ -9,5 +9,5 @@ class Servicio(models.Model):
     descripcion_lugar = models.TextField(max_length=500)
 
     def __str__(self):
-        return self.descripcion_lugar
+        return self.nombre
 

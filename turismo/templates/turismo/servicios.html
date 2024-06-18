@@ -1,21 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>TURISMO ES</title>
 </head>
 <body>
-    <h1>Lista de Servicios nuevos</h1>
-    <ul>
+    <div class="title-container">
+        <h1>Lista de Servicios nuevos</h1>
+    </div>
+    
+    <div class="card-container">
         {% for servicio in servicios %}
-            <li>
+            <div class="card">
+                <img src="{{ servicio.foto.url }}" alt="Foto de {{ servicio.nombre }}">
                 <p>{{ servicio.nombre }}</p>
                 <p>{{ servicio.precio }}</p>
                 <p>{{ servicio.descripcion_lugar }}</p>
-                <img src="{{ servicio.foto.url }}" alt="Foto de {{ servicio.nombre }}">
-            </li>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
 </body>
 </html>
